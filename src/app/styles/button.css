@@ -1,0 +1,55 @@
+/* app/styles/buttons.css */
+.btn {
+    appearance: none;
+    border: 1px solid #e5e7eb;   /* gray-200 */
+    background: #fff;
+    color: #111827;              /* gray-900 */
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+    transition:
+            background-color 0.2s,
+            border-color 0.2s,
+            box-shadow 0.2s,
+            transform 0.02s;
+}
+
+.btn:hover {
+    background: #f8fafc;         /* gray-50 */
+    border-color: #d1d5db;       /* gray-300 */
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn:focus-visible {
+    outline: 2px solid #2563eb;  /* blue-600 */
+    outline-offset: 2px;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Primary */
+.btn-primary {
+    background: #2563eb;         /* blue-600 */
+    border-color: #2563eb;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;         /* blue-700 */
+    border-color: #1d4ed8;
+}
+
+.btn-primary:active {
+    background: #1e40af;         /* blue-800 */
+    border-color: #1e40af;
+}
