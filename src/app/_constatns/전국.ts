@@ -1,4 +1,3 @@
-import { 대구 } from '@/app/constatns/대구';
 import { 강남11개구 } from './강남11개구';
 import { 강북14개구 } from './강북14개구';
 import { 강원 } from './강원';
@@ -6,6 +5,7 @@ import { 경기 } from './경기';
 import { 경남 } from './경남';
 import { 경북 } from './경북';
 import { 광주 } from './광주';
+import { 대구 } from './대구';
 import { 대전 } from './대전';
 import { 부산 } from './부산';
 import { 울산 } from './울산';
@@ -47,7 +47,7 @@ export const 전국: RegionType[] = [
   { code: '4800000000', name: '경남', children: 경남 },
   { code: '5000000000', name: '제주', children: 제주 },
   { code: '5100000000', name: '강원', children: 강원 },
-  { code: '5200000000', name: '전북', children: 전북 }
+  { code: '5200000000', name: '전북', children: 전북 },
 ];
 
 export const 지역코드 = [
@@ -66,5 +66,5 @@ export const 지역코드 = [
   '4700000000',
   '4800000000',
   '5100000000',
-  '5200000000'
+  '5200000000',
 ];

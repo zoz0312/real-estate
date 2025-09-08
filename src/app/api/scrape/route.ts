@@ -1,4 +1,4 @@
-import { 지역코드 } from '@/app/constatns';
+import { 지역코드 } from '@/app/_constatns';
 import { storeKbResponse } from '@/lib/services/storeKbResponse';
 import axios from 'axios';
 

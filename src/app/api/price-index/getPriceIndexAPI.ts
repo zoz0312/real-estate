@@ -3,7 +3,7 @@ import axios from 'axios';
 
 type GetPriceIndexParams = {
   regionName?: string;
-  regionCode: string;
+  regionCode?: string;
 }
 
 type GetPriceIndexResponse = {

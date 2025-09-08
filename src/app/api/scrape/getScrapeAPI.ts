@@ -11,5 +11,5 @@ type GetScrapeResponse = {
 }
 
 export const getScrapeAPI = async (params: GetScrapeParams) => {
-  return await axios.get<GetScrapeResponse>('/api/scrape', { params });
+  return (await axios.get<GetScrapeResponse>('/api/scrape', { params })).data;
 }

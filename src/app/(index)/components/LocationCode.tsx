@@ -1,7 +1,7 @@
-import { RegionType, 전국 } from '@/app/constatns';
+import { RegionType, 전국 } from "@/app/_constatns";
 
 import { useRouter, useSearchParams } from "next/navigation";
-import { ChangeEventHandler, FC, useEffect, useState } from 'react';
+import { ChangeEventHandler, FC, useEffect, useState } from "react";
 
 
 const LocationCode: FC = () => {
@@ -63,7 +63,7 @@ const LocationCode: FC = () => {
   }, [firstRegion, router, searchParams, secondRegion]);
 
   return (
-    <div style={{ display: 'flex', gap: '0.5rem' }}>
+    <div style={{ display: "flex", gap: "0.5rem" }}>
       <select
         className="select"
         value={firstRegion.code}
@@ -79,7 +79,7 @@ const LocationCode: FC = () => {
 
       <select
         className="select"
-        value={secondRegion?.code ?? 'none'}
+        value={secondRegion?.code ?? "none"}
         onChange={handleSecondRegionChange}
         disabled={!firstRegion.children}
       >
