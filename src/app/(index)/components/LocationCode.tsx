@@ -1,4 +1,3 @@
-
 import { RegionType, 전국 } from '@/app/constatns';
 
 import { useRouter, useSearchParams } from "next/navigation";
@@ -64,7 +63,7 @@ const LocationCode: FC = () => {
   }, [firstRegion, router, searchParams, secondRegion]);
 
   return (
-    <div css={{ display: 'flex', gap: '0.5rem' }}>
+    <div style={{ display: 'flex', gap: '0.5rem' }}>
       <select
         className="select"
         value={firstRegion.code}

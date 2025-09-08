@@ -19,7 +19,6 @@
     "typeorm": "^0.3.26"
   },
   "devDependencies": {
-    "@emotion/react": "^11.14.0",
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20.19.13",
