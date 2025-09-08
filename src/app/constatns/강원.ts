@@ -17,4 +17,4 @@ export const 강원 = [
   { code: "5181000000", name: "인제군" },
   { code: "5182000000", name: "고성군" },
   { code: "5183000000", name: "양양군" },
-] as const;
+];

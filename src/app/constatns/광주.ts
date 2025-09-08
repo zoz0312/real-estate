@@ -4,4 +4,4 @@ export const 광주 = [
   { code: "2915500000", name: "남구" },
   { code: "2917000000", name: "북구" },
   { code: "2920000000", name: "광산구" },
-] as const;
+];

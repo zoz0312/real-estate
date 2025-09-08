@@ -8,4 +8,4 @@ export const 인천 = [
   { code: "2824500000", name: "계양구" },
   { code: "2826000000", name: "서구" },
   { code: "2871000000", name: "강화군" },
-] as const;
+];

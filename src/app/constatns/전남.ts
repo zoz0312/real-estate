@@ -20,4 +20,4 @@ export const 전남 = [
   { code: "4688000000", name: "장성군" },
   { code: "4689000000", name: "완도군" },
   { code: "4690000000", name: "진도군" },
-] as const;
+];

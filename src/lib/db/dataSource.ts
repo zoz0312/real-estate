@@ -10,7 +10,7 @@ export const AppDataSource = new DataSource({
   password: process.env.DB_PASSWORD,
   database: process.env.DB_DATABASE,
   timezone: process.env.DB_TIMEZONE ?? "Z",
-  logging: process.env.DB_LOGGING === "true",
+  // logging: process.env.DB_LOGGING === "true",
   synchronize: true, // 개발 단계에서만
   entities: [PriceIndex],
 });

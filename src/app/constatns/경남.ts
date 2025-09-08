@@ -22,4 +22,4 @@ export const 경남 = [
   { code: "4887000000", name: "함양군" },
   { code: "4888000000", name: "거창군" },
   { code: "4889000000", name: "합천군" },
-] as const;
+];

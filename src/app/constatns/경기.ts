@@ -50,4 +50,4 @@ export const 경기 = [
   { code: "4180000000", name: "연천군" },
   { code: "4182000000", name: "가평군" },
   { code: "4183000000", name: "양평군" },
-] as const;
+];

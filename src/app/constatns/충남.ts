@@ -16,4 +16,4 @@ export const 충남 = [
   { code: "4480000000", name: "홍성군" },
   { code: "4481000000", name: "예산군" },
   { code: "4482500000", name: "태안군" },
-] as const;
+];

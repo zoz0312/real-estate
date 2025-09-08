@@ -16,6 +16,7 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "useDefineForClassFields": false,
+    "jsxImportSource": "@emotion/react",
     "plugins": [
       {
         "name": "next"

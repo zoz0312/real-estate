@@ -15,4 +15,4 @@ export const 부산 = [
   { code: "2650000000", name: "수영구" },
   { code: "2653000000", name: "사상구" },
   { code: "2671000000", name: "기장군" },
-] as const;
+];

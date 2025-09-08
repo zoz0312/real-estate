@@ -4,4 +4,4 @@ export const 울산 = [
   { code: "3117000000", name: "동구" },
   { code: "3120000000", name: "북구" },
   { code: "3171000000", name: "울주군" },
-] as const;
+];

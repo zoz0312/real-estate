@@ -13,4 +13,4 @@ export const 전북 = [
   { code: "5277000000", name: "순창군" },
   { code: "5279000000", name: "고창군" },
   { code: "5280000000", name: "부안군" },
-] as const;
+];

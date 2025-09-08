@@ -19,4 +19,4 @@ export const 경북 = [
   { code: "4785000000", name: "칠곡군" },
   { code: "4790000000", name: "예천군" },
   { code: "4792000000", name: "봉화군" },
-] as const;
+];

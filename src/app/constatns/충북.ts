@@ -14,4 +14,4 @@ export const 충북 = [
   { code: "4376000000", name: "괴산군" },
   { code: "4377000000", name: "음성군" },
   { code: "4380000000", name: "단양군" },
-] as const;
+];

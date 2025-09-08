@@ -1,4 +1,7 @@
 'use client';
+import LocationCode from '@/app/(index)/components/LocationCode';
+import { getPriceIndexAPI } from '@/app/api/price-index/getPriceIndexAPI';
+import { useSearchParams } from 'next/navigation';
 import { useMemo, useState } from 'react';
 import { 전국Type, 전국 } from '@/app/constatns';
 import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
@@ -6,6 +9,7 @@ import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'rec
 const SALE_COLOR = '#2563eb';
 const JEONSE_COLOR = '#10b981';
 export default function Page() {
+  const searchParams = useSearchParams();
   const [type, setType] = useState<'SALE' | 'JEONSE'>('SALE');
   const [status, setStatus] = useState('');
   const [rows, setRows] = useState<{
@@ -16,9 +20,11 @@ export default function Page() {
     JEONSE: []
   });
 
-  const [regionCode, setRegionCode] = useState<전국Type['code']>(전국[0].code);
 
   const scrape = async () => {
+    // TODO: 추후 활성화
+    return;
+
     setStatus('실행 중...');
     const res = await fetch(`/api/scrape?type=${type}`, { cache: 'no-store' });
     const data = await res.json();
@@ -26,11 +32,10 @@ export default function Page() {
   };
 
   const load = async () => {
-    const qs = new URLSearchParams();
-    if (regionCode && regionCode !== ('ALL' as any)) qs.set('regionCode', regionCode as string);
-    const res = await fetch(`/api/price-index?${qs.toString()}`, { cache: 'no-store' });
+    const regionCode = searchParams.get("regionCode");
+    const result = await getPriceIndexAPI({ regionCode });
 
-    setRows(await res.json());
+    setRows(result);
   };
 
   const chartData = useMemo(() => {
@@ -71,19 +76,8 @@ export default function Page() {
       </div>
 
       {/* 조회 필터 */}
-      <div className="row">
-        <select
-          className="select"
-          value={regionCode}
-          onChange={(e) => setRegionCode(e.target.value as 전국Type['code'])}
-        >
-          <option value="ALL">전체</option>
-          {전국.map((r) => (
-            <option key={r.code} value={r.code}>
-              {r.name}
-            </option>
-          ))}
-        </select>
+      <div css={{ display: 'flex', gap: '0.5rem' }}>
+        <LocationCode />
 
         <button className="btn" onClick={load}>
           조회

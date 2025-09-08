@@ -7,4 +7,4 @@ export const 대구 = [
   { code: "2726000000", name: "수성구" },
   { code: "2729000000", name: "달서구" },
   { code: "2771000000", name: "달성군" },
-] as const;
+];
